@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/bg600">
+    android:background="@drawable/wall24">
 
     <LinearLayout
         android:orientation="vertical"
@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:padding="20dp"
         android:layout_centerHorizontal="true"
-        android:background="#46ffffff"
+        android:background="#32ffffff"
         android:layout_marginTop="20dp">
 
         <TextView
@@ -21,7 +21,8 @@
             android:id="@+id/textView"
             android:textSize="@dimen/h1"
             android:textStyle="bold"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="#bbff01" />
 
         <ImageView
             android:layout_width="@dimen/logo"
@@ -52,5 +53,6 @@
         android:layout_height="wrap_content"
         android:text="LOGIN"
         android:id="@+id/button"
+        android:onClick="clickLogin"
         android:layout_alignParentBottom="true" />
 </RelativeLayout>
